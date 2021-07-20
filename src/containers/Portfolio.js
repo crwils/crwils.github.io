@@ -1,9 +1,15 @@
 import React from 'react';
-import Header from '../components/Header';
+import { Header, NavBar, ProjectItem, ProjectList } from '../components';
 
 function Portfolio(props) {
     return (
-        <Header />
+        <>
+            <NavBar />
+            <Header />
+            <ProjectList />
+            <ProjectItem />
+        </>
+        
     );
 }
 
