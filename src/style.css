@@ -1,3 +1,7 @@
+/* * {
+    margin: 0;
+} */
+
 .icon-me {
     display: block;
     z-index: 2;
@@ -12,4 +16,37 @@
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
+}
+
+.max-width {
+    margin: auto;
+    width: 90%;
+    max-width: 620px;
+    justify-content: space-between;
+}
+
+nav .max-width {
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .max-width ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .max-width li {
+    padding-left: 30px;
+}
+
+.header-introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
