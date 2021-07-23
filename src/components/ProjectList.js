@@ -1,6 +1,7 @@
 import React from 'react';
 
-function ProjectList(props) {
+function ProjectList({state}) {
+    
     return (
         <p>Project List</p>
     );
