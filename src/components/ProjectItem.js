@@ -1,8 +1,9 @@
 import React from 'react';
 
-function ProjectItem(props) {
+function ProjectItem({myProjects}) {
+    
     return (
-        <p>Project Item</p>
+        <p>{myProjects}</p>
     );
 }
 

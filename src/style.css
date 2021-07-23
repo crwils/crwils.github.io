@@ -75,10 +75,38 @@ nav .max-width li {
     text-align: left;
     display: block;
     font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    padding-bottom: 30px;
 }
 
 .page-width {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1dd6894b;
+    margin: 40px;
+    padding: 30px;
+}
+
+.project-box div {
+    text-align: left;
+    padding: 5px 5px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects-grid {
+    text-align: left;
+    display: block;
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    padding-bottom: 30px;
 }
