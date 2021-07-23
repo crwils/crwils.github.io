@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Header, NavBar, ProjectItem, ProjectList, About } from '../components';
+import { Header, NavBar, ProjectList, About } from '../components';
 
 function Portfolio(props) {
 

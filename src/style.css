@@ -54,6 +54,7 @@ nav .max-width li {
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 400px;
     padding-bottom: 50px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -75,7 +76,8 @@ nav .max-width li {
     text-align: left;
     display: block;
     font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
-    padding-bottom: 30px;
+    padding-bottom: 48px;
+    padding-top: 48px;
 }
 
 .page-width {
@@ -85,12 +87,13 @@ nav .max-width li {
 }
 
 .project-box {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     background-color: #1dd6894b;
-    margin: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
     padding: 30px;
+    width: 530px;
+    height: 75px;
 }
 
 .project-box div {
@@ -98,15 +101,30 @@ nav .max-width li {
     padding: 5px 5px;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .projects-grid {
     text-align: left;
     display: block;
     font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
     padding-bottom: 30px;
+}
+
+.project-items {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+a {
+    color:#16d887;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #16d887;
+}
+
+a:hover {
+    color:black;
+    border-bottom: solid 1px black;
 }

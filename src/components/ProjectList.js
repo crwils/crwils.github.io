@@ -24,7 +24,9 @@ function ProjectList(props) {
     return (
         <div className="projects-grid max-width">
             <h3>Projects</h3>
-            {myProjects}
+            <div className="project-items">
+                {myProjects}
+            </div>
         </div>
     );
 }
