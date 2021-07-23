@@ -1,12 +1,13 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 
-function ProjectList({state}) {
+function ProjectList(props) {
+
 
     return (
-        <section>
-            <ProjectItem />
-        </section>
+        <div>
+            project list
+        </div>
     );
 }
 

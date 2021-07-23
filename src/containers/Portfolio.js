@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Header, NavBar, ProjectItem, ProjectList } from '../components';
+import { Header, NavBar, ProjectItem, ProjectList, About } from '../components';
 
 function Portfolio(props) {
 
@@ -19,8 +19,8 @@ function Portfolio(props) {
                 <NavBar click={handleClick} />
                 <Header />
             </section>
+                <About />
                 <ProjectList />
-                <ProjectItem />
         </main>
         
     );
