@@ -1,23 +1,27 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Header, NavBar, ProjectItem, ProjectList } from '../components';
 
 function Portfolio(props) {
 
     const [state, setState] = useState(0);
 
-    useEffect (() => {
-        setState(state+1)
-    })
 
+    function handleClick(event) {
+        event.preventDefault()
+        setState(state+1)
+        console.log("clicked");
+    }
 
 
     return (
-        <>
-            <NavBar />
-            <Header />
-            <ProjectList state={state} />
-            <ProjectItem />
-        </>
+        <main>
+            <section className="header-index">
+                <NavBar click={handleClick} />
+                <Header />
+            </section>
+                <ProjectList />
+                <ProjectItem />
+        </main>
         
     );
 }

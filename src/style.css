@@ -52,8 +52,19 @@ nav .max-width li {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 50px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header-introduction h2 {
-    max-width: 400px;
+    max-width: 600px;
+    line-height: 1.2;
+    font-size: 2.325rem;
+    color: #16d887;
+    font-weight: 500;
+    font-family: Cooper,Georgia,Cambria,Times New Roman,Times,serif;
+}
+
+.header-index {
+    background-color: #c7f8e4;
 }
