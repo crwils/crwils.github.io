@@ -11,7 +11,6 @@ function Portfolio(props) {
         console.log("clicked") 
     };
 
-
     return (
         <main>
             <section className="header-index">
@@ -19,9 +18,9 @@ function Portfolio(props) {
                 <Header />
             </section>
             <section>
+                <Counter state={state}/>
                 <About />
                 <ProjectList />
-                <Counter state={state}/>
             </section>
         </main>
         

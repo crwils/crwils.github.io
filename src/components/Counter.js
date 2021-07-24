@@ -4,15 +4,13 @@ function Counter(props) {
 
     const counter = () => {
         return (
-            <div>
-                10
-            </div>
+            <button>{props.state}</button>
         )
     }
 
     return (
         <div>
-            {counter}
+            {counter()}
         </div>
     );
 }
