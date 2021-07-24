@@ -12,7 +12,7 @@ function ProjectList(props) {
                     <div>
                         {project.name}
                     </div>
-                    <div>
+                    <div className="techStack small">
                         {project.techStack}
                     </div>
                 </div>

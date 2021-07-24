@@ -135,3 +135,11 @@ a:hover {
     transition-delay: 0s;
     backface-visibility: hidden;
 }
+
+.small {
+    font-size: 0.8rem;
+}
+
+.techStack {
+    color:darkslategray;
+}
