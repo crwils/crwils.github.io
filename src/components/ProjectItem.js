@@ -1,9 +1,15 @@
 import React from 'react';
 
-function ProjectItem({myProjects}) {
+function ProjectItem(props) {
     
     return (
-        <p>{myProjects}</p>
+
+        <>
+            {props.projects}
+        </>
+
+
+
     );
 }
 
