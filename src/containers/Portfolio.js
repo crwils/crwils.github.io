@@ -1,26 +1,31 @@
 import React, {useState} from 'react';
-import { Header, NavBar, ProjectList, About, Counter } from '../components';
+import { Header, NavBar, ProjectList, About, Counter, Display } from '../components';
+import myProjectList from '../assets/myProjects';
 
 function Portfolio(props) {
 
     const [state, setState] = useState(0);
-
-    const handleClick = (event) => {
-        event.preventDefault()
-        setState(state+1)
-        console.log("clicked") 
-    };
+        // assigning the myprojectlist object to state
+        const [myProjects, setMyProjects] = useState({
+            projects: myProjectList,
+        })
 
     return (
         <main>
             <section className="header-index">
-                <NavBar click={handleClick} />
+                <NavBar state={state} setState={setState} increment={5}/>
                 <Header />
             </section>
-            <section>
-                <Counter state={state}/>
+            <section >
+                {/* <div className="counter">
+                <Counter state={state} setState={setState} increment={5}/>
+                <Counter state={state} setState={setState} increment={10}/>
+                <Counter state={state} setState={setState} increment={15}/>
+                <Counter state={state} setState={setState} increment={20}/>
+                </div> */}
+                {/* <Display state={state} /> */}
                 <About />
-                <ProjectList />
+                <ProjectList projects={myProjects} />
             </section>
         </main>
         

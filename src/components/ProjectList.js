@@ -1,11 +1,8 @@
 import React from 'react';
-import ProjectItem from './ProjectItem';
-import myProjectList from '../assets/myProjects';
 
 function ProjectList(props) {
 
-
-    const myProjects = myProjectList.map((project) => {
+    const myProjects = props.projects.projects.map((project) => {
         return (
             <div className="project-container">
                 <div className="project-box">
