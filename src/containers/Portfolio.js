@@ -1,13 +1,9 @@
 import React, {useState} from 'react';
 import { Header, NavBar, ProjectList, About } from '../components';
-import myProjectList from '../assets/myProjects';
 
 function Portfolio(props) {
     
     // assigning the myprojectlist object to state
-    const [myProjects, setMyProjects] = useState({
-            projects: myProjectList,
-    })
 
     return (
         <main>
@@ -17,7 +13,7 @@ function Portfolio(props) {
             </section>
             <section >
                 <About />
-                <ProjectList projects={myProjects} />
+                <ProjectList />
             </section>
         </main>
         

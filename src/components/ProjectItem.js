@@ -1,12 +1,12 @@
 import React from "react";
 
 function ProjectItem(props) {
-    
+
   // projects is being passed down from app>projectlist>projectitem
-  const myProjects = props.projects.projects.map((project) => {
+  const myProjects = props.projects.map((project, key) => {
     return (
       <div className="project-container">
-        <div className="project-box">
+        <div className="project-box" key={key}>
           <div>{project.name}</div>
           <div className="techStack small">{project.techStack}</div>
         </div>
@@ -14,7 +14,9 @@ function ProjectItem(props) {
     );
   });
 
-  return <>{myProjects}</>;
+  return (
+        <>{myProjects}</>
+      )
 }
 
 export default ProjectItem;

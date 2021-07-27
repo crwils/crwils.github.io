@@ -7,10 +7,7 @@ function ProjectList(props) {
   return (
     <div className="projects-grid max-width">
       <h3>Projects</h3>
-      <Search />
-      <div className="project-items">
-        <ProjectItem projects={props.projects} />
-      </div>
+      <Search projects={props.projects} />
     </div>
   );
 }
