@@ -3,6 +3,6 @@ import NavBar from './NavBar';
 import ProjectList from './ProjectList';
 import ProjectItem from './ProjectItem';
 import About from './About';
-import Form from './Form';
+import Search from './Search';
 
-export { Header, NavBar, ProjectList, ProjectItem, About, Form };
+export { Header, NavBar, ProjectList, ProjectItem, About, Search };

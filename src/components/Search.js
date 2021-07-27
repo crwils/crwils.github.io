@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
-function Form(props) {
+function Search(props) {
 
-    const [text, setText] = useState("");
+    const [search, setSearch] = useState("");
 
-    const handleTextChange = (event) => {
-        setText(event.target.value)
+    const handleSearchChange = (event) => {
+        setSearch(event.target.value)
     }
 
     const handleButtonSubmit = (event) => {
@@ -16,10 +16,10 @@ function Form(props) {
         <form action="">
             <input type="text" 
             placeholder="Search projects" 
-            onChange={handleTextChange}
+            onChange={handleSearchChange}
             />
         </form>
     );
 }
 
-export default Form;
+export default Search;

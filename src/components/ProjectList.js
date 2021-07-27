@@ -1,13 +1,13 @@
 import React from "react";
 
-import { ProjectItem, Form } from ".";
+import { ProjectItem, Search } from ".";
 
 function ProjectList(props) {
   
   return (
     <div className="projects-grid max-width">
       <h3>Projects</h3>
-      <Form />
+      <Search />
       <div className="project-items">
         <ProjectItem projects={props.projects} />
       </div>
