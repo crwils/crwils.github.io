@@ -14,7 +14,7 @@ function Search(props) {
     //     }
     // })
 
-    const filteredProjects = myProjectList.filter(val => val == "" ? val : val.name.toLowerCase().includes(search.toLowerCase()))
+    const filteredProjects = myProjectList.filter(val => val == "" ? val : val.name.toLowerCase().includes(search.toLowerCase()) || val.techStack.toLowerCase().includes(search.toLowerCase()) )
 
     const handleSearchChange = (event) => {
         setSearch(event.target.value)
