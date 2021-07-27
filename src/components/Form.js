@@ -1,10 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Form(props) {
+
+    const [text, setText] = useState("");
+
+    const handleTextChange = (event) => {
+        setText(event.target.value)
+    }
+
+    const handleButtonSubmit = (event) => {
+        event.preventDefault();
+        console.log(event.target.value);
+    }
     return (
-        <div>
-           Form 
-        </div>
+        <form action="">
+            <input type="text" 
+            placeholder="Search projects" 
+            onChange={handleTextChange}
+            />
+        </form>
     );
 }
 

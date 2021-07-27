@@ -1,6 +1,7 @@
 import React from "react";
 
 function ProjectItem(props) {
+    
   // projects is being passed down from app>projectlist>projectitem
   const myProjects = props.projects.projects.map((project) => {
     return (
