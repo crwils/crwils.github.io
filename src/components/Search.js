@@ -14,10 +14,14 @@ function Search(props) {
     //     }
     // })
 
-    const filteredProjects = myProjectList.filter(val => 
-
+    const filteredProjects = myProjectList.filter(val => {
+        if (val == "") {
+            return val
+        } else {
+        return (
         val.name.toLowerCase().includes(search.toLowerCase())
-    )
+        )}
+    })
 
     const handleSearchChange = (event) => {
         setSearch(event.target.value)
