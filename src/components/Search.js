@@ -6,14 +6,6 @@ function Search(props) {
 
     const [search, setSearch] = useState("");
 
-    // const filteredProjects = myProjectList.filter((val) => {
-    //     if (search == "") {
-    //         return val;
-    //     } else if (val.name.toLowerCase().includes(search.toLowerCase())) {
-        
-    //     }
-    // })
-
     const filteredProjects = myProjectList.filter(val => val == "" ? val : val.name.toLowerCase().includes(search.toLowerCase()) || val.techStack.toLowerCase().includes(search.toLowerCase()) )
 
     const handleSearchChange = (event) => {
@@ -31,17 +23,8 @@ function Search(props) {
             />
         </form>
         <div className="project-items">
-            {/* <ProjectItem projects={filteredProjects} /> */}
-
-            {filteredProjects.map((val) => {
-                return(
-                    <div className="project-box">
-                        <p>{val.name}</p>
-                        <p>{val.techStack}</p>
-                    </div>
-                )
-            })}
-      </div>
+            <ProjectItem projects={filteredProjects} />
+        </div>
     </>
     );
 }

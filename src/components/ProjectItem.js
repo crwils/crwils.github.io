@@ -2,20 +2,23 @@ import React from "react";
 
 function ProjectItem(props) {
 
-  // projects is being passed down from app>projectlist>projectitem
-  const myProjects = props.projects.map((project, key) => {
-    return (
-      <div className="project-container">
-        <div className="project-box" key={key}>
-          <div>{project.name}</div>
-          <div className="techStack small">{project.techStack}</div>
-        </div>
-      </div>
-    );
-  });
+    const projectItem = props.projects.map((val) => {
+            return(
+                <div className="project-box">
+                    <div>
+                        {val.name}
+                    </div>
+                    <div>
+                        {val.techStack}
+                    </div>
+                </div>
+            )
+    })
 
   return (
-        <>{myProjects}</>
+        <>
+            {projectItem}
+        </>
       )
 }
 
