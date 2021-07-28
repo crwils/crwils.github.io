@@ -42,8 +42,9 @@ nav .max-width ul {
     display: flex;
 }
 
-nav .max-width li {
+.nav-link {
     padding-left: 30px;
+    text-decoration: none;
 }
 
 .header-introduction {

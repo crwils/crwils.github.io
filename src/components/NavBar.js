@@ -9,15 +9,17 @@ function NavBar(props) {
         <nav>
             <div className="max-width">
                 <a className="icon-me" title="link to homepage" href=".">
-                    <img type="button" src={myavatar} alt="A photograph of me" />
+                    <Link to='/'>
+                        <img type="button" src={myavatar} alt="A photograph of me" />
+                    </Link>
                 </a>
                 <ul>
                     {/* <li>Home</li> */}
-                    <Link to='/'>Home</Link>
+                    <Link className="nav-link" to='/about'>About</Link>
                     {/* <li>About</li> */}
-                    <Link to='/about'>About</Link>
+                    <Link className="nav-link" to='/projects'>Projects</Link>
                     {/* <li>Projects</li> */}
-                    <Link to='/projectlist'>Projects</Link>
+                    <Link className="nav-link" to='/contact'>Contact</Link>
                 </ul>
             </div>
         </nav>
