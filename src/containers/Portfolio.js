@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import { Header, NavBar, ProjectList, About } from "../components";
 
