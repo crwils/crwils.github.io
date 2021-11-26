@@ -43,7 +43,7 @@ nav .max-width ul {
 }
 
 .nav-link {
-    padding-left: 30px;
+    margin: 0 15px;
     text-decoration: none;
 }
 
