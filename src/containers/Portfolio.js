@@ -1,26 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import { Header, NavBar, ProjectList, About } from "../components";
 
 function Portfolio(props) {
+
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView();
+
   return (
     <Router>
       <main>
         <section className="header-index">
-          <NavBar />
+          <NavBar ref={myRef}  scroll={executeScroll} />
           <Header />
         </section>
         <section>
           <Switch>
             <Route exact path="/about">
-              {" "}
-              <About />{" "}
+              <About ref={myRef} />
             </Route>
             <Route exact path="/projectlist">
-              {" "}
-              <ProjectList />{" "}
+              <ProjectList />
             </Route>
           </Switch>
         </section>

@@ -1,6 +1,14 @@
-/* * {
-    margin: 0;
-} */
+* {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5.5em 0 0;
+}
 
 .icon-me {
     display: block;
@@ -91,10 +99,10 @@ nav .max-width ul {
     justify-content: center;
     background-color: #1dd6894b;
     margin-top: 20px;
-    margin-right: 20px;
-    padding: 30px;
-    width: 530px;
-    height: 75px;
+    margin: .5rem;
+    padding: 1.25em;
+    width: calc(50% - 1rem);
+    min-height: 75px;
 }
 
 .project-box div {

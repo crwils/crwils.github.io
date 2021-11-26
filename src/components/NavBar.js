@@ -15,7 +15,7 @@ function NavBar(props) {
                 </a>
                 <ul>
                     {/* <li>Home</li> */}
-                    <Link className="nav-link" to='/about'>About</Link>
+                    <Link className="nav-link" to='/about' onClick={props.scroll}>About</Link>
                     {/* <li>About</li> */}
                     <Link className="nav-link" to='/projectlist'>Projects</Link>
                     {/* <li>Projects</li> */}
