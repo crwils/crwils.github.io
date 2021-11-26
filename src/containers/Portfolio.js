@@ -14,11 +14,13 @@ function Portfolio(props) {
         </section>
         <section>
           <Switch>
-            <Route exact path='/about'>
-              <About />
+            <Route exact path="/about">
+              {" "}
+              <About />{" "}
             </Route>
-            <Route exact path='/projectlist'>
-              <ProjectList />
+            <Route exact path="/projectlist">
+              {" "}
+              <ProjectList />{" "}
             </Route>
           </Switch>
         </section>
