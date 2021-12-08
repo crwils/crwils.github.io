@@ -6,29 +6,23 @@ import { Header, NavBar, ProjectList, About } from "../components";
 
 function Portfolio(props) {
 
-  const myRef = useRef(null);
+  const aboutRef = useRef();
 
-  const executeScroll = () => myRef.current.scrollIntoView();
+  const executeScroll = () => {
+    aboutRef.current.scrollIntoView();
+  }
 
   return (
-    <Router>
       <main>
         <section className="header-index">
-          <NavBar ref={myRef}  scroll={executeScroll} />
+          <NavBar scroll={executeScroll}/>
           <Header />
         </section>
         <section>
-          <Switch>
-            <Route exact path="/about">
-              <About ref={myRef} />
-            </Route>
-            <Route exact path="/projectlist">
-              <ProjectList />
-            </Route>
-          </Switch>
+          <About ref={aboutRef}/>
+          <ProjectList />
         </section>
       </main>
-    </Router>
   );
 }
 

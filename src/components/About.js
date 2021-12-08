@@ -1,10 +1,9 @@
-import React, {useRef} from 'react';
+import React, {useRef, forwardRef} from 'react';
 
-function About(props) {
-
+const About = forwardRef(({ref}) => {
 
     return (
-        <div className="about-me max-width">
+        <div ref={ref} className="about-me max-width">
             <h3>About Me</h3>
 
             Hello! 👋 
@@ -17,9 +16,9 @@ function About(props) {
 
             <p>I encourage you to check out my projects below that I did as part of the course! </p>
 
-            <p ref={props.ref}>If you'd like to connect with me, I'm available on both <a href="http://www.linkedin.com/in/crwils/">LinkedIn</a> and <a href="http://www.twitter.com/cr_wils">Twitter</a> <b>or</b> you can drop me an <a href="mailto:craigwilsonmusic@gmail.com">email</a> - I'd love to hear from you!</p>
+            <p>If you'd like to connect with me, I'm available on both <a href="http://www.linkedin.com/in/crwils/">LinkedIn</a> and <a href="http://www.twitter.com/cr_wils">Twitter</a> <b>or</b> you can drop me an <a href="mailto:craigwilsonmusic@gmail.com">email</a> - I'd love to hear from you!</p>
         </div>
     );
-}
+})
 
 export default About;

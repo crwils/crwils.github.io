@@ -1,29 +1,29 @@
-import React from 'react';
+import React, {forwardRef, useRef} from 'react';
 import { Link } from 'react-router-dom'
 import myavatar from "../myavatar.png" 
 import "../style.css"
 
-function NavBar(props) {
+const NavBar = forwardRef(({ref, scroll}) => {
 
     return (
         <nav>
             <div className="max-width">
                 <a className="icon-me" title="link to homepage" href=".">
-                    <Link to='/'>
+                    <a href='/'>
                         <img type="button" src={myavatar} alt="A photograph of me" />
-                    </Link>
+                    </a>
                 </a>
                 <ul>
                     {/* <li>Home</li> */}
-                    <Link className="nav-link" to='/about' onClick={props.scroll}>About</Link>
+                    <a onClick={scroll} className="nav-link" href='/about'>About</a>
                     {/* <li>About</li> */}
-                    <Link className="nav-link" to='/projectlist'>Projects</Link>
+                    <a className="nav-link" href='/projectlist'>Projects</a>
                     {/* <li>Projects</li> */}
-                    <Link className="nav-link" to='/contact'>Contact</Link>
+                    <a className="nav-link" href='/contact'>Contact</a>
                 </ul>
             </div>
         </nav>
     );
-}
+})
 
 export default NavBar;
