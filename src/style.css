@@ -79,7 +79,7 @@ nav .max-width ul {
 
 .header-index {
     
-    border-bottom: 5px solid white;
+    /* border-bottom: 5px solid white; */
 }
 
 .header-introduction h2 {
@@ -221,11 +221,11 @@ a:hover {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #850028;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #850028;
   }
   
   input:checked + .slider:before {

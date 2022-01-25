@@ -17,7 +17,7 @@ function DarkMode(props) {
     return (
         <>
             <label className="switch" name="switch">
-                <input onChange={handleSlider} type="checkbox"></input>
+                <input onClick={handleSlider} type="checkbox"></input>
                 <span className="slider round"></span>
             </label>
         </>
