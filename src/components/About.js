@@ -3,8 +3,9 @@ import React, {useRef, forwardRef} from 'react';
 const About = forwardRef(({ref}) => {
 
     return (
+        <>
         <div ref={ref} className="about-me max-width">
-            <h3>About Me</h3>
+            <h3 id="about">About Me</h3>
 
             Hello! 👋 
 
@@ -18,7 +19,15 @@ const About = forwardRef(({ref}) => {
 
             <p>If you'd like to connect with me, I'm available on both <a href="http://www.linkedin.com/in/crwils/">LinkedIn</a> and <a href="http://www.twitter.com/cr_wils">Twitter</a> <b>or</b> you can drop me an <a href="mailto:craigwilsonmusic@gmail.com">email</a> - I'd love to hear from you!</p>
         </div>
+        <script>
+            $(document).on('mousedown', '.stop-drag', function(){
+                $('.stop-drag').attr('draggable', 'true')
+                $('.stop-drag').attr('ondragstart', 'event.preventDefault(); event.stopPropagation();')
+	        });
+        </script>
+        </>
     );
+
 })
 
 export default About;
