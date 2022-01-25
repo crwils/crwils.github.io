@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function DarkMode(props) {
+
+    const [darkMode, setDarkMode] = useState();
+
+    const handleSlider = function () {
+        setDarkMode(!darkMode);
+        console.log(darkMode);
+    }
     return (
         <>
-            <label class="switch">
-                <input type="checkbox"></input>
-                <span class="slider round"></span>
+            <label className="switch" name="switch">
+                <input onChange={handleSlider} type="checkbox"></input>
+                <span className="slider round"></span>
             </label>
         </>
     );
