@@ -6,6 +6,11 @@ html, body {
     box-sizing: border-box;
 }
 
+body {
+    background-color: black !important;
+    margin: 30px;
+}
+
 .container {
     padding: 5.5em 0 0;
 }
@@ -68,17 +73,28 @@ nav .max-width ul {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.projects-grid {
+    min-height: 400px;
+}
+
+.header-index {
+    
+    border-bottom: 5px solid white;
+}
+
 .header-introduction h2 {
     max-width: 600px;
     line-height: 1.2;
     font-size: 2.325rem;
-    color: #16d887;
+    color: white;
     font-weight: 500;
     font-family: Cooper,Georgia,Cambria,Times New Roman,Times,serif;
 }
 
-.header-index {
-    background-color: #c7f8e4;
+#root {
+    border: 5px solid white;
+    border-radius: 25px;
+    margin: 30px;
 }
 
 .about-me {
@@ -87,6 +103,11 @@ nav .max-width ul {
     font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
     padding-bottom: 48px;
     padding-top: 48px;
+    color: white;
+}
+
+h3 {
+    color: white;
 }
 
 .page-width {
@@ -97,12 +118,12 @@ nav .max-width ul {
 
 .project-box {
     justify-content: center;
-    background-color: #1dd6894b;
+    background-color: white;
     margin-top: 20px;
     margin: .5rem;
     padding: 1.25em;
     width: calc(50% - 1rem);
-    min-height: 75px;
+    min-height: 132px;
 }
 
 .project-box div {
@@ -125,17 +146,17 @@ nav .max-width ul {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: underline;
 }
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 a:hover {
     color: antiquewhite;
-    background-color: black;
+    background-color: white;
     background-image: linear-gradient(180deg,transparent 50%,#00122c 0);
     transition: all .2s;
     transition-property: all;

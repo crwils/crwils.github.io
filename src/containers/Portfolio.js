@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Header, NavBar, ProjectList, About } from "../components";
+import "../style.css";
 
 function Portfolio(props) {
 
