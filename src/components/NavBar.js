@@ -15,9 +15,9 @@ const NavBar = forwardRef(({ref, scroll}) => {
                 </a>
                 <ul>
                     {/* <li>Home</li> */}
-                    <a onClick={scroll} className="nav-link" href='/about'>About</a>
+                    <a className="nav-link" href='/about'>About</a>
                     {/* <li>About</li> */}
-                    <a className="nav-link" href='/projectlist'>Projects</a>
+                    <a className="nav-link" href='#project-list'>Projects</a>
                     {/* <li>Projects</li> */}
                     <a className="nav-link" href='/contact'>Contact</a>
                 </ul>
