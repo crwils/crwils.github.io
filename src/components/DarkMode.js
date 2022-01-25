@@ -6,7 +6,13 @@ function DarkMode(props) {
 
     const handleSlider = function () {
         setDarkMode(!darkMode);
-        console.log(darkMode);
+        if (darkMode === true) {
+            console.log(darkMode);
+            console.log('dark mode is true');
+        } else if (darkMode === false) {
+            console.log(darkMode);
+            console.log('dark mode is false');
+        }
     }
     return (
         <>
