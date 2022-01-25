@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectItem, Search } from ".";
+import { Search } from ".";
 
 function ProjectList(props) {
   
