@@ -4,10 +4,10 @@ import { Search } from ".";
 function ProjectList(props) {
   
   return (
-    <div className="projects-grid max-width">
-      <h3 id="project-list">Projects</h3>
+    <section className="container projects-grid max-width" id="project-list">
+      <h3>Projects</h3>
       <Search />
-    </div>
+    </section>
   );
 }
 

@@ -13,8 +13,8 @@ function About(props) {
 
     return (
         <>
-        <div className="about-me max-width">
-            <h3 id="about" onClick={handleClick}>About Me</h3>
+        <section className="container about-me max-width" id="about">
+            <h3 onClick={handleClick}>About Me</h3>
 
             Hello! 👋 
 
@@ -27,7 +27,7 @@ function About(props) {
             <p>I encourage you to check out my projects below that I did as part of the course! </p>
 
             <p>If you'd like to connect with me, I'm available on both <a href="http://www.linkedin.com/in/crwils/">LinkedIn</a> and <a href="http://www.twitter.com/cr_wils">Twitter</a> <b>or</b> you can drop me an <a href="mailto:craigwilsonmusic@gmail.com">email</a> - I'd love to hear from you!</p>
-        </div>
+        </section>
         </>
     );
 
