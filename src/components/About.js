@@ -14,11 +14,11 @@ function About(props) {
     return (
         <>
         <section className="container about-me max-width" id="about">
-            <h3 onClick={handleClick}>About Me</h3>
+            <h3 onClick={handleClick} className="bg-white font-bold text-black w-[10rem]">About Me</h3>
 
             Hello! 👋 
 
-            <p className="text-3xl font-bold underline text-pink">I'm Craig - a Junior Software Developer from Edinburgh, Scotland.</p>
+            <p>I'm Craig - a Junior Software Developer from Edinburgh, Scotland.</p>
 
             <p>After four years working as a recruiter in the tech industry in Dubai, I made a career change into tech. In July, I graduated from CodeClan in Edinburgh - an SQA-accredited digital skills academy teaching the fundamentals of Software Development through over 800 hours coding. </p>
 
