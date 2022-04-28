@@ -1,17 +1,17 @@
 import React from 'react';
-import myavatar from "../myavatar.png" 
+import myAvatar from "../myavatar.png" 
 import "../style.css"
 import DarkMode from './DarkMode';
 
-function NavBar (props) {
+const NavBar = () => {
 
     return (
         <>
             <nav>
                 <div className="max-width">
-                    <span className="icon-me" title="link to homepage" href=".">
+                    <span className="icon-me" title="link to homepage">
                         <a href='/'>
-                            <img type="button" src={myavatar} alt="A photograph of me" />
+                            <input type="image" src={myAvatar} />
                         </a>
                     </span>
                     <DarkMode/>
