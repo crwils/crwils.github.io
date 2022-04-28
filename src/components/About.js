@@ -18,7 +18,7 @@ function About(props) {
 
             Hello! 👋 
 
-            <p>I'm Craig - a Junior Software Developer from Edinburgh, Scotland.</p>
+            <p className="text-3xl font-bold underline text-pink">I'm Craig - a Junior Software Developer from Edinburgh, Scotland.</p>
 
             <p>After four years working as a recruiter in the tech industry in Dubai, I made a career change into tech. In July, I graduated from CodeClan in Edinburgh - an SQA-accredited digital skills academy teaching the fundamentals of Software Development through over 800 hours coding. </p>
 
