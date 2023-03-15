@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Mona Sans Black';
+    src: url('./assets/fonts/Mona-Sans-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-mona {
+    font-family: 'Mona Sans Black', sans-serif;
+}

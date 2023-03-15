@@ -7,8 +7,11 @@ html, body {
 }
 
 body {
-    background-color: black !important;
-    margin: 30px;
+    /* background-color: black !important; */
+    background-image: url("./assets/images/crwils-bg.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -92,9 +95,10 @@ nav .max-width ul {
 }
 
 #root {
-    border: 5px solid white;
+    border: 5px solid #b29c9b;
     border-radius: 25px;
     margin: 30px;
+    height: 100vh;
 }
 
 .about-me {
